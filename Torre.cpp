@@ -17,10 +17,10 @@ private:
     }
 
 public:
-    Torre(int f, int c, bool black){
+    Torre(int f, int c, bool color){
         fila = f;
         columna = c;
-        isBlack = black;
+        isBlack = color;
     }
 
     void move(int newFila, int newColumna){
