@@ -49,8 +49,8 @@ public:
     }
 
     void Printstate(){
-        cout<<"color de la torre: "<<draw()<< " " << (isBlack ? "Negro" : "Blanca") << endl;
-        cout<<"en posicion,  fila: "<<fila<<", columna: "<<columna<<endl;
+        cout<<"Color de la torre: "<<draw()<< " " << (isBlack ? "Negro" : "Blanca") << endl;
+        cout<<"En posicion,  fila: "<<fila<<", columna: "<<columna<<endl;
     }
 };
 
