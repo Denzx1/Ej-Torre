@@ -49,7 +49,7 @@ public:
 
     void Printstate(){
         cout<<"color de la torre: "<<draw()<<endl;
-        cout<<"en posicion,  fila: "<<fila<<", columna: "<<columna<<endl
+        cout<<"en posicion,  fila: "<<fila<<", columna: "<<columna<<endl;
     }
 };
 
