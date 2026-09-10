@@ -30,30 +30,45 @@ public:
                 columna = newColumna;
                 cout<<"Realizando Moviemiento a la posicion: ("<<fila<<","<<columna<<")"<<endl;
             }
+            else{
+                cout<<"Movimiento invalido"<<endl;
+            }
         }
         else {
-            cout<<"Movimiento invlaido fuera del tablero"<<endl;
+            cout<<"Movimiento invalido fuera del tablero"<<endl;
         }
     }
    
     string draw(){
         if(isBlack){
-            cout<<"White ";
             return "##";
         }
         else{
-            cout<<"Black";
             return "TT";
         }
     }
 
     void Printstate(){
-        cout<<"color de la torre: "<<draw()<<endl;
+        cout<<"color de la torre: "<<draw()<< " " << (isBlack ? "Negro" : "Blanca") << endl;
         cout<<"en posicion,  fila: "<<fila<<", columna: "<<columna<<endl;
     }
 };
 
 int main() {
-    
+    int fil, col;
+    Torre t1(1,3,true), t2(3,4,false);
+    cout<<"Ingrese fila para t1 : "<<endl;
+    cin>>fil;
+    cout<<"Ingrese columna para t1 : "<<endl;
+    cin>>col;
+    t1.move(fil, col);
+    t1.Printstate();
+
+    cout<<"Ingrese fila para t2 : "<<endl;
+    cin>>fil;
+    cout<<"Ingrese columna para t2 : "<<endl;
+    cin>>col;
+    t2.move(fil, col);
+    t2.Printstate();
     return 0;
 }
