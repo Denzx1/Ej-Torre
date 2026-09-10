@@ -36,6 +36,21 @@ public:
         }
     }
    
+    string draw(){
+        if(isBlack){
+            cout<<"White ";
+            return "##";
+        }
+        else{
+            cout<<"Black";
+            return "TT";
+        }
+    }
+
+    void Printstate(){
+        cout<<"color de la torre: "<<draw()<<endl;
+        cout<<"en posicion,  fila: "<<fila<<", columna: "<<columna<<endl
+    }
 };
 
 int main() {
