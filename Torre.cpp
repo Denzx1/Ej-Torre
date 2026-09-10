@@ -23,6 +23,18 @@ public:
         isBlack = black;
     }
 
+    void move(int newFila, int newColumna){
+        if(newFila >0 && newFila <9 && newColumna >0 && newColumna <9){
+            if(validateMovement(newFila, newColumna)){
+                fila = newFila;
+                columna = newColumna;
+                cout<<"Realizando Moviemiento a la posicion: ("<<fila<<","<<columna<<")"<<endl;
+            }
+        }
+        else {
+            cout<<"Movimiento invlaido fuera del tablero"<<endl;
+        }
+    }
    
 };
 
